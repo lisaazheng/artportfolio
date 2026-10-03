@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Graphic Design — Lisa Zheng</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav>
+  <a class="logo" href="index.html">Lisa Zheng</a>
+  <div class="navlinks">
+    <a href="works.html" class="">Works</a>
+    <a href="graphic.html" class="active">Graphic Design</a>
+    <a href="about.html" class="">About Me</a>
+  </div>
+</nav>
+<main>
+  <div class="section-hero">
+  <a class="back" href="index.html">&larr; back to the garage</a>
+    <h2>Graphic Design</h2>
+    <p>Branding, posters, and packaging for small studios and friends' side projects.</p>
+  </div>
+  <div class="grid">
+    <div class="piece" role="button" tabindex="0" aria-haspopup="dialog"
+         data-img="images/graphic-1.svg" data-title="Sundial Coffee" data-desc="A full identity for a small coffee roaster — logo, cup sleeves, and bag labels. The mark is built from a simplified sundial shape, which doubles as the dot over the 'i' across all their print materials.">
+      <div class="piece-thumb"><img src="images/graphic-1.svg" alt="Sundial Coffee"></div>
+      <h3>Sundial Coffee</h3>
+      <p>brand identity</p>
+    </div>
+    <div class="piece" role="button" tabindex="0" aria-haspopup="dialog"
+         data-img="images/graphic-2.svg" data-title="Paper Moon Fest" data-desc="A set of three posters for a local arts festival, each one built around a different phase of the moon. Screen-printed in two colors to keep the production simple and the run affordable.">
+      <div class="piece-thumb"><img src="images/graphic-2.svg" alt="Paper Moon Fest"></div>
+      <h3>Paper Moon Fest</h3>
+      <p>poster series</p>
+    </div>
+    <div class="piece" role="button" tabindex="0" aria-haspopup="dialog"
+         data-img="images/graphic-3.svg" data-title="Marlowe &amp; Co." data-desc="Packaging design for a small candle company, including box structure and label illustration. I hand-painted the botanical motifs and had them digitized to keep a slightly imperfect, hand-done feel.">
+      <div class="piece-thumb"><img src="images/graphic-3.svg" alt="Marlowe & Co."></div>
+      <h3>Marlowe & Co.</h3>
+      <p>packaging</p>
+    </div>
+    <div class="piece" role="button" tabindex="0" aria-haspopup="dialog"
+         data-img="images/graphic-4.svg" data-title="Late Bloom Zine" data-desc="Cover art for a friend's quarterly zine, printed in two risograph passes — a layer of blue and a layer of fluorescent pink that slightly misregister on purpose.">
+      <div class="piece-thumb"><img src="images/graphic-4.svg" alt="Late Bloom Zine"></div>
+      <h3>Late Bloom Zine</h3>
+      <p>risograph cover</p>
+    </div>
+  </div>
+</main>
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
+      <div class="modal-image"><img id="modal-img" src="" alt=""></div>
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+    </div>
+  </div>
+<script src="js/gallery.js"></script>
+</body>
+</html>
