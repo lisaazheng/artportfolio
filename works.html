@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portfolio — Lisa Zheng</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav>
+  <a class="logo" href="index.html">Lisa Zheng</a>
+  <div class="navlinks">
+    <a href="works.html" class="active">Works</a>
+    <a href="graphic.html" class="">Graphic Design</a>
+    <a href="about.html" class="">About Me</a>
+  </div>
+</nav>
+<main>
+  <div class="section-hero">
+  <a class="back" href="index.html">&larr; back to the garage</a>
+    <h2>Portfolio</h2>
+    <p>Paintings, sketches, and illustrations — mostly made late at night with too much tea.</p>
+  </div>
+  <div class="grid">
+    <div class="piece" role="button" tabindex="0" aria-haspopup="dialog"
+         data-img="images/works-1.svg" data-title="Quiet Morning" data-desc="A small gouache study painted over one slow Sunday, built from three warm layers of color and a lot of water. I wanted the light to feel like it hadn't quite decided to be morning yet.">
+      <div class="piece-thumb"><img src="images/works-1.svg" alt="Quiet Morning"></div>
+      <h3>Quiet Morning</h3>
+      <p>gouache on paper</p>
+    </div>
+    <div class="piece" role="button" tabindex="0" aria-haspopup="dialog"
+         data-img="images/works-2.svg" data-title="Field Study I" data-desc="The first in an ongoing series of field studies, painted from a photo I took on a walk near my parents' place. I kept the palette almost entirely blues and purples to see how far I could push it before it stopped looking like a field.">
+      <div class="piece-thumb"><img src="images/works-2.svg" alt="Field Study I"></div>
+      <h3>Field Study I</h3>
+      <p>acrylic, 16×20</p>
+    </div>
+    <div class="piece" role="button" tabindex="0" aria-haspopup="dialog"
+         data-img="images/works-3.svg" data-title="Paper Weather" data-desc="Torn paper, gouache, and a little bit of thread. This piece started as a mistake — I spilled water on a sketch and liked the bloom it left, so I built the whole piece around chasing that effect again.">
+      <div class="piece-thumb"><img src="images/works-3.svg" alt="Paper Weather"></div>
+      <h3>Paper Weather</h3>
+      <p>mixed media</p>
+    </div>
+    <div class="piece" role="button" tabindex="0" aria-haspopup="dialog"
+         data-img="images/works-4.svg" data-title="Small Blue Hour" data-desc="A quick ten-minute watercolor, the kind I do most evenings to warm up. This one just happened to come out better than most, so it earned a frame.">
+      <div class="piece-thumb"><img src="images/works-4.svg" alt="Small Blue Hour"></div>
+      <h3>Small Blue Hour</h3>
+      <p>watercolor</p>
+    </div>
+  </div>
+</main>
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
+      <div class="modal-image"><img id="modal-img" src="" alt=""></div>
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+    </div>
+  </div>
+<script src="js/gallery.js"></script>
+</body>
+</html>
