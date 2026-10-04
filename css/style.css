@@ -122,6 +122,11 @@ main{max-width:1180px;margin:0 auto;padding:0 6vw 90px;}
 #modal-desc{font-size:.95rem;}
 
 /* STARBUCKS: text list + single photo */
+.list-heading{
+  max-width:640px;margin:48px auto 4px;font-size:1.3rem;
+}
+.list-heading:first-of-type{margin-top:36px;}
+
 .drink-list{max-width:640px;margin:0 auto;}
 .drink-row{
   display:flex;align-items:baseline;justify-content:space-between;gap:16px;
